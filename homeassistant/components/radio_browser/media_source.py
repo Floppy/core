@@ -21,7 +21,7 @@ from homeassistant.components.media_source.models import (
 )
 from homeassistant.core import HomeAssistant
 
-from .const import DOMAIN, LOGGER
+from .const import DOMAIN
 from .coordinator import RadioBrowserDataUpdateCoordinator
 
 CODEC_TO_MIMETYPE = {
@@ -113,7 +113,6 @@ class RadioMediaSource(MediaSource):
 
             if stations:
                 for station in stations:
-                    LOGGER.error(station)
                     station = BrowseMediaSource(
                         domain=DOMAIN,
                         identifier=station["stationuuid"],
