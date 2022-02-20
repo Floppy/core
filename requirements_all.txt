@@ -1787,6 +1787,9 @@ pyqvrpro==0.52
 # homeassistant.components.qwikswitch
 pyqwikswitch==0.93
 
+# homeassistant.components.radio_browser
+pyradios==1.0.1
+
 # homeassistant.components.nmbs
 pyrail==0.0.3
 
